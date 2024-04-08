@@ -1,0 +1,23 @@
+.custom-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.custom-pagination .pagination-item {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-pagination .pagination-item.active {
+    background-color: white;
+}

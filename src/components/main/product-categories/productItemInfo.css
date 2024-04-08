@@ -1,0 +1,26 @@
+.productCateg__item-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.productCateg__item-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.productCateg__item-desc {
+    margin-bottom: 30px;
+}
+
+.productCateg__item-consult-btn {
+    width: 100%;
+    max-width: 330px;
+    padding: 14px 50px;
+    border-radius: 50px;
+    background: #1A43EF;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}

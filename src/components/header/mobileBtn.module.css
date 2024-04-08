@@ -1,0 +1,79 @@
+/* Nav Icon */
+.mobileNavBtn {
+	--time: 0.1s;
+
+	--width: 30px;
+	--height: 20px;
+
+	--line-height: 4px;
+	--spacing: 4px;
+
+	--color: #1A43EF;
+	--radius: 4px;
+	height: calc(var(--line-height) * 3 + var(--spacing) * 2);
+	width: var(--width);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+
+.navIcon {
+	position: relative;
+	width: var(--width);
+	height: var(--line-height);
+	background-color: var(--color);
+	border-radius: var(--radius);
+}
+
+.navIcon::before,
+.navIcon::after {
+content: '';
+	display: block;
+
+	position: absolute;
+	left: 0;
+
+	width: var(--width);
+	height: var(--line-height);
+
+	border-radius: var(--radius);
+	background-color: var(--color);
+	transition: transform var(--time) ease-in,
+		top var(--time) linear var(--time);
+}
+
+.navIcon::before {	/* top: calc(var(--line-height) * -2); */
+	top: calc(-1 * (var(--line-height) + var(--spacing)));
+}
+
+.navIcon::after {
+/* top: calc(var(--line-height) * 2); */
+	top: calc(var(--line-height) + var(--spacing));
+}
+
+.navIcon.active {
+	background-color: transparent;
+}
+
+.navIcon.active::before,
+.navIcon.active::after {
+	top: 0;
+	transition: top var(--time) linear,
+		transform var(--time) ease-in var(--time);
+}
+
+.navIcon.active::before {
+	transform: rotate(45deg);
+}
+
+.navIcon.active::after {
+	transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 900px) {
+    .mobileNavBtn {
+        display: none;
+    }
+}

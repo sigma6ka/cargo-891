@@ -1,0 +1,38 @@
+.advantages__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.advantages__items>*:last-child {
+    flex: 1 1 33.333%;
+}
+
+.advantages__items>*:not(:last-child) {
+    border-radius: 6px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+@media screen and (min-width: 1340px) {
+    .advantages__items>*:not(:last-child) {
+        max-width: 430px;
+    }
+}
+
+.advantages__card {
+    min-width: 430px;
+    padding: 50px;
+}
+
+@media screen and (max-width: 1339px) {
+    .advantages__card {
+        flex: 1 1 33.333%;
+    }
+}
+
+.advantages__card-box>*:not(:last-child) {
+    margin-bottom: 10px;
+}

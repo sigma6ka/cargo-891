@@ -1,0 +1,34 @@
+.mobileNav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.mobileNav.open {
+    right: 0;
+}
+
+.mobileNav a {
+    color: var(--accent);
+}
+
+.mobileNav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+    font-size: 28px;
+    font-weight: 500;
+}

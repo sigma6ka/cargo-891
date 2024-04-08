@@ -1,0 +1,37 @@
+.deliveryCard__item {
+  min-width: 345px;
+  padding: 50px;
+}
+
+@media screen and (min-width: 1025px) {
+  .deliveryCard__item {
+      min-width: 430px;
+  }
+}
+
+@media screen and (max-width: 1339px) {
+  .deliveryCard__item {
+    flex: 1 1 33.333%;
+  }
+}
+
+.deliveryCard__item-number {
+  font-size: 64px;
+  color: var(--accent);
+}
+
+.deliveryCard__item-box>*:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.deliveryCard__item-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media screen and (max-width: 480px) {
+  .deliveryCard__item-title {
+    font-size: 20px;
+  }
+}

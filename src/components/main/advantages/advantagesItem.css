@@ -1,0 +1,37 @@
+.advantages__item {
+    min-width: 345px;
+    padding: 50px;
+}
+
+@media screen and (min-width: 1025px) {
+    .advantages__item {
+        min-width: 430px;
+    }
+}
+
+@media screen and (max-width: 1339px) {
+    .advantages__item {
+        flex: 1 1 33.333%;
+    }
+}
+
+.advantages__item-number {
+    font-size: 64px;
+    color: var(--accent);
+}
+
+.advantages__item-box>*:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.advantages__item-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media screen and (max-width: 480px) {
+    .advantages__item-title {
+        font-size: 20px;
+    }
+}
